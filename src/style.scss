@@ -5,3 +5,87 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(14, 158, 139);
+  color: white;
+  padding: 1rem;
+
+  .nav-Brand {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .nav-Img {
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .nav-Wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    gap: 10px;
+    width: 300px;
+
+    .nav-Links {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      transition: all;
+      transition-duration: 0.3s;
+      width: 90%;
+      cursor: pointer;
+
+      a {
+        font-family: inherit;
+        color: white;
+        text-decoration: none;
+        transition: all;
+        transition-duration: 1s;
+      }
+
+      a:hover {
+        color: rgb(15, 15, 15);
+        transform: rotate(5deg);
+        transform: scale(1.1);
+      }
+    }
+
+    .nav-Links.active {
+      transform: translateX(200%);
+    }
+
+    i {
+      z-index: 1;
+      overflow: hidden;
+      font-size: 25px;
+      height: 100%;
+      width: 10%;
+      background-color: #0e9e8b;
+      cursor: pointer;
+    }
+  }
+}
